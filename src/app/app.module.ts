@@ -7,11 +7,13 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { SocketProvider } from '../providers/socket/socket';
+import { EditFormPage } from '../pages/edit-form/edit-form';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    EditFormPage
   ],
   imports: [
     BrowserModule,
@@ -20,7 +22,8 @@ import { SocketProvider } from '../providers/socket/socket';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    EditFormPage
   ],
   providers: [
     StatusBar,

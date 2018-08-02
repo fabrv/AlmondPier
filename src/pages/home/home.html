@@ -23,43 +23,13 @@
   <button class="light-secondary" ion-button color="secondary"><ion-icon name="add"></ion-icon>&nbsp;Nuevo formulario</button>
   <ion-grid>
     <ion-row>
-      <ion-col>
-        <ion-card>
+      <ion-col col-md-3 *ngFor="let form of forms">
+        <ion-card (click)="pushPage(form.formName)">
           <ion-card-header>
-            Formulario 1
+            {{form.formName}}
           </ion-card-header>
           <ion-card-content>
-            375 Respuestas
-          </ion-card-content>        
-        </ion-card>
-      </ion-col>
-      <ion-col>
-        <ion-card>
-          <ion-card-header>
-            Formulario 2
-          </ion-card-header>
-          <ion-card-content>
-            8 Respuestas
-          </ion-card-content>        
-        </ion-card>
-      </ion-col>
-      <ion-col>
-        <ion-card>
-          <ion-card-header>
-            Formulario 3
-          </ion-card-header>
-          <ion-card-content>
-            32 Respuestas
-          </ion-card-content>        
-        </ion-card>
-      </ion-col>
-      <ion-col>
-        <ion-card>
-          <ion-card-header>
-            Formulario 4
-          </ion-card-header>
-          <ion-card-content>
-            1 Respuesta
+            {{form.answers}} Respuestas
           </ion-card-content>        
         </ion-card>
       </ion-col>
