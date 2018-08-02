@@ -17,7 +17,7 @@ import { EditFormPage } from '../pages/edit-form/edit-form';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp, {})
   ],
   bootstrap: [IonicApp],
   entryComponents: [
