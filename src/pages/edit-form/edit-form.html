@@ -7,11 +7,23 @@
 </ion-header>
 
 
-<ion-content padding>    
-  <ion-list class="questions">
+<ion-content padding>  
+    <ion-input placeholder="Titulo" type="text"></ion-input>  
+  <ion-list class="questions" reorder="true" no-lines>
     <ion-item *ngFor="let question of form.QUESTIONS">
-      <ion-label>Titulo</ion-label>
-      <ion-input type="text" [(ngModel)]="question.QUESTION"></ion-input>
+      <ion-input placeholder="Titulo" type="text" [(ngModel)]="question.QUESTION"></ion-input>
+      
+      <ion-select [(ngModel)]="question.TYPE">
+        <ion-option value="1">NES</ion-option>
+        <ion-option value="2">Nintendo64</ion-option>
+        <ion-option value="3">PlayStation</ion-option>
+        <ion-option value="4">Sega Genesis</ion-option>
+        <ion-option value="5">Sega Saturn</ion-option>
+        <ion-option value="6">SNES</ion-option>
+        <ion-option value="7">SNES</ion-option>
+        <ion-option value="8">SNES</ion-option>
+        <ion-option value="9">SNES</ion-option>
+      </ion-select>
     </ion-item>
   </ion-list>
 </ion-content>

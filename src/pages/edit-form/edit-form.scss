@@ -8,6 +8,10 @@ page-edit-form {
         background-color: white;
         ion-item{
             background-color: white;
+            border: none !important;            
+            ion-select{
+                border: none !important;
+            }
         }
     }
 }
