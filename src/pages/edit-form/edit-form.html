@@ -1,14 +1,17 @@
 <ion-header no-border>
 
   <ion-navbar>
-    <ion-title><strong>{{formName}}</strong></ion-title>
+    <ion-title>
+      <strong>
+        <ion-input [(ngModel)]="formName" placeholder="Titulo" type="text"></ion-input>
+      </strong>      
+    </ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>  
-    <ion-input placeholder="Titulo" type="text"></ion-input>  
+<ion-content padding>
   <ion-list class="questions" reorder="true" no-lines>
     <ion-item *ngFor="let question of form.QUESTIONS">
       <ion-input placeholder="Titulo" type="text" [(ngModel)]="question.QUESTION"></ion-input>
